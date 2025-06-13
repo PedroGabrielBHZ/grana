@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grana.ai - Seu Assistente Financeiro no WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #10B981, #059669);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="fixed w-full z-30 top-0 bg-gray-900 bg-opacity-80 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Site branding -->
+                <div class="shrink-0 mr-4">
+                    <a href="#" class="flex items-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="text-emerald-500">
+                            <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 7L12 12L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12 12V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="ml-2 text-2xl font-bold text-gray-100">grana.ai</span>
+                    </a>
+                </div>
+                <!-- Desktop navigation -->
+                <nav class="hidden md:flex md:grow">
+                    <ul class="flex grow justify-end flex-wrap items-center">
+                        <li><a href="#features"
+                                class="text-gray-400 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Recursos</a>
+                        </li>
+                        <li><a href="#how-it-works"
+                                class="text-gray-400 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Como
+                                Funciona</a></li>
+                        <li><a href="#testimonial"
+                                class="text-gray-400 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Depoimentos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex items-center"> <a href="#"
+                        class="btn text-white bg-emerald-600 hover:bg-emerald-700 ml-3 rounded-lg px-4 py-2 transition duration-300 ease-in-out flex items-center">
+                        <span>Começar</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 md:pt-40 md:pb-32">
+            <!-- Background illustration -->
+            <div class="absolute inset-0 bg-gray-900 overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-grid-gray-800/[0.2] [mask-image:linear-gradient(to_bottom,white_20%,transparent_100%)]">
+                </div>
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] h-[150%] sm:w-[100%] sm:h-[100%] rounded-full bg-emerald-500/10 blur-[120px]">
+                </div>
+            </div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center relative z-10">
+                <div class="max-w-3xl mx-auto">
+                    <h1
+                        class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">
+                        Gerencie suas finanças diretamente no <span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-green-600">WhatsApp</span>.
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-400 mb-8">Grana.ai é seu assistente financeiro pessoal.
+                        Acompanhe
+                        despesas, visualize relatórios e obtenha insights simplesmente conversando.</p>
+                    <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"> <a href="#"
+                            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                            <i data-lucide="send" class="w-5 h-5 mr-3"></i>
+                            Experimente agora no WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="mt-16 md:mt-20 relative">
+                    <div class="absolute inset-0 bg-black/20 rounded-xl blur-2xl"></div>
+                    <img src="https://placehold.co/1024x576/1A202C/10B981?text=App+Screenshot" alt="App screenshot"
+                        class="mx-auto rounded-xl shadow-2xl w-full max-w-4xl"
+                        onerror="this.onerror=null;this.src='https://placehold.co/1024x576/1A202C/FFFFFF?text=Grana.ai+Interface';">
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-12 md:py-20 bg-gray-800/20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-100">A maneira mais simples de controlar
+                        seu dinheiro
+                    </h2>
+                    <p class="text-lg text-gray-400">Todos os recursos que você precisa, sem bagunça. Apenas converse
+                        com
+                        Grana.ai.</p>
+                </div>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Feature 1 -->
+                    <div
+                        class="text-center p-6 bg-gray-800 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="flex items-center justify-center h-16 w-16 rounded-full bg-emerald-500/10 mx-auto mb-4">
+                            <i data-lucide="message-square-plus" class="w-8 h-8 text-emerald-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Controle de Despesas</h3>
+                        <p class="text-gray-400">Apenas envie uma mensagem como "Gastei R$50 no almoço" e nós
+                            registraremos para
+                            você.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div
+                        class="text-center p-6 bg-gray-800 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="flex items-center justify-center h-16 w-16 rounded-full bg-emerald-500/10 mx-auto mb-4">
+                            <i data-lucide="bar-chart-3" class="w-8 h-8 text-emerald-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Relatórios Instantâneos</h3>
+                        <p class="text-gray-400">Pergunte "Quanto gastei este mês?" e obtenha um resumo instantâneo e
+                            claro.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div
+                        class="text-center p-6 bg-gray-800 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="flex items-center justify-center h-16 w-16 rounded-full bg-emerald-500/10 mx-auto mb-4">
+                            <i data-lucide="list-checks" class="w-8 h-8 text-emerald-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Categorização Inteligente</h3>
+                        <p class="text-gray-400">Nós categorizamos automaticamente suas despesas em alimentação,
+                            transporte, contas e
+                            muito mais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works Section -->
+        <section id="how-it-works" class="py-12 md:py-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-100">Comece em segundos</h2>
+                    <p class="text-lg text-gray-400">Sem aplicativos para baixar, sem contas para criar. É tão fácil
+                        quanto enviar
+                        uma mensagem.</p>
+                </div>
+                <div class="max-w-3xl mx-auto grid gap-8 md:grid-cols-3">
+                    <!-- Step 1 -->
+                    <div class="text-center flex flex-col items-center">
+                        <div class="relative flex items-center justify-center h-24 w-24 rounded-full bg-gray-800 mb-4">
+                            <div
+                                class="absolute -top-2 -left-2 h-8 w-8 flex items-center justify-center rounded-full bg-emerald-600 text-white font-bold text-lg">
+                                1</div>
+                            <i data-lucide="smartphone" class="w-10 h-10 text-emerald-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Adicione nosso número</h3>
+                        <p class="text-gray-400">Salve nosso contato em seu telefone para iniciar a conversa.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="text-center flex flex-col items-center">
+                        <div class="relative flex items-center justify-center h-24 w-24 rounded-full bg-gray-800 mb-4">
+                            <div
+                                class="absolute -top-2 -left-2 h-8 w-8 flex items-center justify-center rounded-full bg-emerald-600 text-white font-bold text-lg">
+                                2</div>
+                            <i data-lucide="send" class="w-10 h-10 text-emerald-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Diga 'Oi'</h3>
+                        <p class="text-gray-400">Envie um simples "Oi" ou "Olá" no WhatsApp para ativar sua conta.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="text-center flex flex-col items-center">
+                        <div class="relative flex items-center justify-center h-24 w-24 rounded-full bg-gray-800 mb-4">
+                            <div
+                                class="absolute -top-2 -left-2 h-8 w-8 flex items-center justify-center rounded-full bg-emerald-600 text-white font-bold text-lg">
+                                3</div>
+                            <i data-lucide="dollar-sign" class="w-10 h-10 text-emerald-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Comece a Monitorar</h3>
+                        <p class="text-gray-400">É isso! Agora você pode começar a registrar suas despesas e gerenciar
+                            suas
+                            finanças.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonial" class="py-12 md:py-20 bg-gray-800/20">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+                <div class="relative">
+                    <i data-lucide="quote" class="absolute -top-4 -left-4 w-16 h-16 text-gray-700/50"></i>
+                    <blockquote class="text-xl md:text-2xl font-medium text-gray-300 mb-4">
+                        "Grana.ai mudou a forma como vejo minhas finanças. É tão prático que não consigo imaginar minha
+                        vida sem ele.
+                        Finalmente, uma ferramenta que entende minhas necessidades."
+                    </blockquote>
+                    <div class="flex items-center justify-center mt-6">
+                        <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/48x48/718096/FFFFFF?text=JS"
+                            alt="Avatar">
+                        <div>
+                            <cite class="font-bold text-gray-100 not-italic">Júlia S.</cite>
+                            <span class="text-gray-400"> - Usuária Pioneira</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20">
+            <div class="max-w-3xl mx-auto text-center px-4 sm:px-6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-100">Assuma o controle da sua vida financeira
+                    hoje.
+                </h2>
+                <p class="text-lg text-gray-400 mb-8">Pare de adivinhar, comece a saber. Converse com Grana.ai e
+                    simplifique suas
+                    finanças para sempre.</p>
+                <a href="#"
+                    class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <i data-lucide="whatsapp" class="w-6 h-6 mr-3"></i>
+                    Comece gratuitamente no WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="text-emerald-500">
+                            <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 7L12 12L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12 12V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-gray-100">grana.ai</span>
+                    </a>
+                </div>
+                <div class="text-sm text-gray-500">
+                    &copy; 2024 Grana.ai. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
